@@ -7,12 +7,19 @@ const botaoSubtrair = document.getElementById("subtrair")
 
 // Função para subtrair
 function somar() {
+
     //obtendo os valores dos campos de entrada
  const numero1= parseFloat(document.querySelector("#numero1Soma").value)
  const numero2= parseFloat(document.querySelector("#numero2Soma").value)
-//calculando 
+
+ //calculando 
  const total = numero1 + numero2;
 document.querySelector(".resultado").setAttribute("id","resultadoSoma")
+
+// Limpando o conteúdo anterior do parágrafo
+
+paragrafo.innerHTML = ''
+
 // Criando um novo elemento strong para exibir o resultado
  const paragarafo = document.getElementById("resultadoSoma")
  const resultado = document.createElement('strong')
