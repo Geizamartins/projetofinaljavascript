@@ -39,6 +39,10 @@ function subtrair() {
 // Criando um novo elemento strong para exibir o resultado
     // Exibindo o resultado na página
     const paragarafo = document.getElementById("resultadoSub")
+
+    // Limpando o conteúdo anterior do parágrafo
+    paragrafo.innerHTML = '';
+
     const resultado = document.createElement('strong')
     paragarafo.appendChild(resultado)
     resultado.innerText = total
